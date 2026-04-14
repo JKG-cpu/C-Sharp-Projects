@@ -8,7 +8,7 @@ public static class Program
 {
     public static void Main()
     {
-        (Tile[,] board, BoardManager boardManager, SnakeObject snake) = Setup((25, 25));
+        (Tile[,] board, BoardManager boardManager, SnakeObject snake) = Setup((5, 6));
 
         bool running = true;
         Direction dir = Direction.Right;
@@ -66,8 +66,9 @@ public static class Program
                 continue;
             }
 
-            Thread.Sleep(150);
+            Thread.Sleep(450);
         }
+        Console.ReadKey(true);
     }
 
     public static (Tile[,] board, BoardManager boardManager, SnakeObject snake) Setup((int x, int y) size)

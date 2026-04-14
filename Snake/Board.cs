@@ -108,20 +108,26 @@ public class BoardManager(Tile[,] board)
     // Apple Handling
     public bool SpawnApple(SnakeObject snake)
     {
-        if (Board.Cast<Tile>().All(t => !t.IsEmpty)) return false;
+        List<(int row, int col)> availableTiles = [];
 
-        int randRow, randCol;
-        do
+        for (int r = 0; r < RowSize; r++)
         {
-            randRow = rand.Next(0, RowSize);
-            randCol = rand.Next(0, ColSize);
-        } while (snake.Occupies(randRow, randCol));
+            for (int c = 0; c < ColSize; c++)
+            {
+                if (Board[r, c].IsEmpty && !snake.Occupies(r, c))
+                {
+                    availableTiles.Add((r, c));
+                }
+            }
+        }
 
+        if (availableTiles.Count == 0) return false;
+
+        (int randRow, int randCol) = availableTiles[rand.Next(availableTiles.Count)];
         Board[randRow, randCol].TileValue = TileValue.Apple;
-
         return true;
     }
-    
+
     // Snake Creating / Updating
     public SnakeObject CreateSnake() => new(row: RowSize / 2, col: ColSize / 2);
 
