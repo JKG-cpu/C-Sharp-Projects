@@ -4,11 +4,41 @@ using Snake.Snake;
 
 namespace Snake;
 
+public static class UIHelper
+{
+    public static void DisplayBoardSizes(Dictionary<string, (int, int)> boardSizes)
+    {
+        foreach (var (key, (x, y)) in boardSizes)
+        {
+
+        }
+    }
+}
+
 public static class Program
 {
+    private static readonly Dictionary<string, (int, int)> BoardSizes = new()
+    {
+        { "Small", (10, 10) },
+        { "Medium", (20, 20) },
+        { "Large", (25, 35) }
+    };
+
     public static void Main()
     {
-        (Tile[,] board, BoardManager boardManager, SnakeObject snake) = Setup((5, 6));
+        bool running = true;
+
+        while (running)
+        {
+            Console.Clear();
+
+
+        }
+    }
+
+    public static void RunGame((int, int) size)
+    {
+        (Tile[,] board, BoardManager boardManager, SnakeObject snake) = Setup(size);
 
         bool running = true;
         Direction dir = Direction.Right;
@@ -66,9 +96,9 @@ public static class Program
                 continue;
             }
 
-            Thread.Sleep(450);
+            Thread.Sleep(150);
         }
-        Console.ReadKey(true);
+        Console.WriteLine("Press any key to continue.");
     }
 
     public static (Tile[,] board, BoardManager boardManager, SnakeObject snake) Setup((int x, int y) size)
@@ -86,34 +116,3 @@ public static class Program
         return (board, boardManager, snake);
     }
 }
-
-/*
-
-1. Build board
-    - Slots
-   
-2. Start with UI
-    - Display Board
-    - Display Movement
-    - Frames + Clearing
-
-3. Display Snake
-    - Drawing / Adding snake
-    - Moving
-
-4. Input Detection
-    - Console.AvailabeKey
-
-5. Border Detection + Collision
-    - Lose
-
-6. Apples
-    - Spawing + eating
-
-7. Win Condition
-    - If no empty spaces
-
-8. Entry Point
-    - Settings
-
- */
