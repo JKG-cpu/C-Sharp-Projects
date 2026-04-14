@@ -48,13 +48,22 @@ public static class Program
                 }
             }
 
-            bool gameOver = boardManager.UpdateSnake(snake, dir);
+            int gameOver = boardManager.UpdateSnake(snake, dir);
             BoardRendering.DisplayBoard(board);
 
-            if (gameOver)
+            if (gameOver == -1)
             {
                 running = false;
+                Console.Clear();
                 Console.WriteLine("You Lost!");
+                continue;
+            }
+            else if (gameOver == 1)
+            {
+                running = false;
+                Console.Clear();
+                Console.WriteLine("You Won!");
+                continue;
             }
 
             Thread.Sleep(150);
@@ -70,6 +79,8 @@ public static class Program
         Tile[,] board = BoardGenerator.GenerateBoard(size);
         BoardManager boardManager = new(board);
         SnakeObject snake = boardManager.CreateSnake();
+
+        boardManager.SpawnApple(snake);
 
         return (board, boardManager, snake);
     }

@@ -63,6 +63,7 @@ public class BoardManager(Tile[,] board)
     private readonly Tile[,] Board = board;
     public int RowSize = board.GetLength(0);
     public int ColSize = board.GetLength(1);
+    private readonly Random rand = new();
 
     // Quick Tile Grabbing
     public Tile? GetTile(int row, int col)
@@ -82,7 +83,7 @@ public class BoardManager(Tile[,] board)
         {
             for (int c = 0; c < ColSize; c++)
             {
-                Board[r, c].TileValue = TileValue.Empty;
+                Board[r, c].TileValue = Board[r, c].TileValue == TileValue.Apple ? TileValue.Apple : TileValue.Empty;
             }
         }
     }
@@ -104,15 +105,30 @@ public class BoardManager(Tile[,] board)
         }
     }
 
+    // Apple Handling
+    public bool SpawnApple(SnakeObject snake)
+    {
+        if (Board.Cast<Tile>().All(t => !t.IsEmpty)) return false;
+
+        int randRow, randCol;
+        do
+        {
+            randRow = rand.Next(0, RowSize);
+            randCol = rand.Next(0, ColSize);
+        } while (snake.Occupies(randRow, randCol));
+
+        Board[randRow, randCol].TileValue = TileValue.Apple;
+
+        return true;
+    }
+    
     // Snake Creating / Updating
     public SnakeObject CreateSnake() => new(row: RowSize / 2, col: ColSize / 2);
 
-    public bool UpdateSnake(SnakeObject snake, Direction? newDirection = null)
+    public int UpdateSnake(SnakeObject snake, Direction? newDirection = null)
     {
         // Clear Board
         ClearBoard();
-
-        bool appleEaten = false; // Add Check for apples AFTER apple generation (Leave false for now)
 
         // Move + Change Direction
         if (newDirection != null)
@@ -120,23 +136,36 @@ public class BoardManager(Tile[,] board)
             snake.ChangeDirection(newDirection.Value);
         }
 
+        (int dRow, int dCol) = DirectionExtensions.DirectionChange(snake.Direction);
+        (int nextRow, int nextCol) = (snake.Head.Position.row + dRow, snake.Head.Position.col + dCol);
+        bool appleEaten = GetTile(nextRow, nextCol)?.TileValue == TileValue.Apple;
+
         snake.Move(appleEaten);
 
-        // Check Collisions
-        (int hRow, int hCol) = snake.Head.Position;
-        if (GetTile(hRow, hCol) == null)
+        if (appleEaten)
         {
-            return true;
+            bool canSpawn = SpawnApple(snake);
+            if (!canSpawn)
+            {
+                return 1;
+            }
         }
 
-        if (snake.BodyOccupies(hRow, hCol))
+        // Check Collisions
+        (int hRowC, int hColC) = snake.Head.Position;
+        if (GetTile(hRowC, hColC) == null)
         {
-            return true;
+            return -1;
+        }
+
+        if (snake.BodyOccupies(hRowC, hColC))
+        {
+            return -1;
         }
 
         // Update board
         SyncSnake(snake);
 
-        return false;
+        return 0;
     }
 }

@@ -12,7 +12,7 @@ public class SnakePart(int row, int col)
 
 public class SnakeObject
 {
-    private Direction Direction = Direction.Right;
+    public Direction Direction = Direction.Right;
     private readonly List<SnakePart> Body = [];
     public SnakePart Head => Body[0];
 
@@ -49,6 +49,7 @@ public class SnakeObject
     }
 
     public bool BodyOccupies(int row, int col) => Body.Skip(1).Any(p => p.Position == (row, col));
+    public bool Occupies(int row, int col) => Body.Any(p => p.Position == (row, col));
     public List<SnakePart> GetBody() => Body;
 }
 
