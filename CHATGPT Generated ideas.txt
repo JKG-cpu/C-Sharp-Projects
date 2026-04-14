@@ -1,0 +1,131 @@
+Updated C# Learning / Project Order
+
+Context:
+
+* Strong programming foundation (Python, 5 years)
+* Weak in C#-specific features (enums, abstract classes, etc.)
+* Mostly TUI experience, little/no C# GUI
+* Goal: get solid at C#, then possibly move to Go or Rust
+
+---
+
+[+] Lights Out
+
+* Good intro to basic C# syntax + simple OOP
+* Already did this → fine as-is
+
+[+] Minesweeper
+
+* Reinforces grid logic + classes
+* Good early OOP practice
+* Could revisit later to clean up code
+
+[-] Snake
+
+* Keep working on this now
+* Focus on:
+
+  * game loop (timers)
+  * input handling
+  * separating logic (Game, Snake, Food)
+* Still fine as TUI for now
+
+[ ] C# Fundamentals Pass (NEW — do before going further)
+
+* Learn properly instead of just googling:
+
+  * enum
+  * abstract class vs interface
+  * properties (get/set)
+  * constructors
+  * basic collections (List, Dictionary)
+* Do small throwaway examples, not a big project
+
+[ ] Sudoku
+
+* Focus on logic, not UI
+* Good for:
+
+  * validation
+  * algorithms
+  * possibly recursion (solver)
+
+[ ] Basic GUI App (NEW — important)
+
+* First real GUI in C# (WinForms or WPF)
+* Keep it simple:
+
+  * buttons, labels, input
+* Goal is just to understand:
+
+  * event-driven programming
+  * how UI connects to logic
+
+[ ] Algorithm Visualizer
+
+* Now combine:
+
+  * algorithms (from Sudoku + others)
+  * GUI knowledge
+* Learn separation of:
+
+  * logic vs UI
+
+[ ] Dev Tool(s) (GUI or TUI)
+
+* More “real app” style
+* Combine:
+
+  * UI
+  * file handling
+  * modular design
+* Can expand over time
+
+[ ] Refactor Old Projects (NEW but optional)
+
+* Go back to Minesweeper or Snake
+* Improve:
+
+  * structure
+  * naming
+  * use of proper C# features
+
+[ ] Mock OS (LAST)
+
+* Very complex, treat as long-term project
+* Will require:
+
+  * strong OOP
+  * architecture design
+* Expect multiple rewrites
+
+---
+
+Why this order:
+
+1. You already understand programming, so syntax is the main gap
+   → That’s why a “C# fundamentals pass” is added early
+
+2. You’ve only done TUI
+   → GUI is introduced BEFORE big projects that depend on it
+
+3. Projects move from:
+   simple logic → structured logic → UI → full applications → large systems
+
+4. Mock OS is last because doing it earlier will likely lead to messy code and frustration
+
+---
+
+Notes:
+
+* Don’t rush GUI frameworks; just get comfortable with one
+* Don’t aim for perfection on early projects
+* Revisiting old code is where a lot of learning happens
+* C# will feel more structured than Python — that’s normal
+
+---
+
+Optional later direction (after this list):
+
+* Try a small backend project (ASP.NET)
+* Then consider Go or Rust for lower-level/system concepts

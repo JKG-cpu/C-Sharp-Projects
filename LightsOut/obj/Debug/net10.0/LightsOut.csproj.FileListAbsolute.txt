@@ -1,0 +1,14 @@
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.AssemblyInfoInputs.cache
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.AssemblyInfo.cs
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.csproj.CoreCompileInputs.cache
+C:\Users\JK\Desktop\C#\LightsOut\bin\Debug\net10.0\LightsOut.exe
+C:\Users\JK\Desktop\C#\LightsOut\bin\Debug\net10.0\LightsOut.deps.json
+C:\Users\JK\Desktop\C#\LightsOut\bin\Debug\net10.0\LightsOut.runtimeconfig.json
+C:\Users\JK\Desktop\C#\LightsOut\bin\Debug\net10.0\LightsOut.dll
+C:\Users\JK\Desktop\C#\LightsOut\bin\Debug\net10.0\LightsOut.pdb
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.dll
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\refint\LightsOut.dll
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.pdb
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\LightsOut.genruntimeconfig.cache
+C:\Users\JK\Desktop\C#\LightsOut\obj\Debug\net10.0\ref\LightsOut.dll
