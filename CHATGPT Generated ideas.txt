@@ -20,7 +20,7 @@ Context:
 * Good early OOP practice
 * Could revisit later to clean up code
 
-[-] Snake
+[+] Snake
 
 * Keep working on this now
 * Focus on:
@@ -30,7 +30,7 @@ Context:
   * separating logic (Game, Snake, Food)
 * Still fine as TUI for now
 
-[ ] C# Fundamentals Pass (NEW — do before going further)
+[-] C# Fundamentals Pass (NEW — do before going further)
 
 * Learn properly instead of just googling:
 
