@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
-
 using Snake.Models;
 using Snake.Snake;
 
@@ -65,7 +64,6 @@ public class BoardManager(Tile[,] board)
     public int ColSize = board.GetLength(1);
     private readonly Random rand = new();
 
-    // Quick Tile Grabbing
     public Tile? GetTile(int row, int col)
     {
         if (row < 0 || row >= RowSize || col < 0 || col >= ColSize)
@@ -76,7 +74,6 @@ public class BoardManager(Tile[,] board)
         return Board[row, col];
     }
 
-    // Board
     public void ClearBoard()
     {
         for (int r = 0; r < RowSize; r++)
@@ -105,7 +102,6 @@ public class BoardManager(Tile[,] board)
         }
     }
 
-    // Apple Handling
     public bool SpawnApple(SnakeObject snake)
     {
         List<(int row, int col)> availableTiles = [];
@@ -128,19 +124,13 @@ public class BoardManager(Tile[,] board)
         return true;
     }
 
-    // Snake Creating / Updating
     public SnakeObject CreateSnake() => new(row: RowSize / 2, col: ColSize / 2);
 
     public int UpdateSnake(SnakeObject snake, Direction? newDirection = null)
     {
-        // Clear Board
         ClearBoard();
 
-        // Move + Change Direction
-        if (newDirection != null)
-        {
-            snake.ChangeDirection(newDirection.Value);
-        }
+        if (newDirection != null) { snake.ChangeDirection(newDirection.Value); }
 
         (int dRow, int dCol) = DirectionExtensions.DirectionChange(snake.Direction);
         (int nextRow, int nextCol) = (snake.Head.Position.row + dRow, snake.Head.Position.col + dCol);
@@ -151,25 +141,14 @@ public class BoardManager(Tile[,] board)
         if (appleEaten)
         {
             bool canSpawn = SpawnApple(snake);
-            if (!canSpawn)
-            {
-                return 1;
-            }
+            if (!canSpawn) { return 1; }
         }
 
-        // Check Collisions
         (int hRowC, int hColC) = snake.Head.Position;
-        if (GetTile(hRowC, hColC) == null)
-        {
-            return -1;
-        }
+        if (GetTile(hRowC, hColC) == null) { return -1; }
 
-        if (snake.BodyOccupies(hRowC, hColC))
-        {
-            return -1;
-        }
+        if (snake.BodyOccupies(hRowC, hColC)) { return -1; }
 
-        // Update board
         SyncSnake(snake);
 
         return 0;
