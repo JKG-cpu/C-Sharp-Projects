@@ -19,3 +19,18 @@ public enum TileValue
     SnakeHead = 2,
     Apple = 3
 }
+
+public static class TileExtensions
+{
+    public static string GetTileIcon(TileValue tileValue)
+    {
+        return tileValue switch
+        {
+            TileValue.Empty => " ",
+            TileValue.SnakeBody => "■",
+            TileValue.SnakeHead => "●",
+            TileValue.Apple => "✦",
+            _ => throw new ArgumentOutOfRangeException(nameof(tileValue))
+        };
+    }
+}

@@ -1,0 +1,15 @@
+C:\Users\JK\Desktop\C#\Snake\bin\Debug\net10.0\Snake.exe
+C:\Users\JK\Desktop\C#\Snake\bin\Debug\net10.0\Snake.deps.json
+C:\Users\JK\Desktop\C#\Snake\bin\Debug\net10.0\Snake.runtimeconfig.json
+C:\Users\JK\Desktop\C#\Snake\bin\Debug\net10.0\Snake.dll
+C:\Users\JK\Desktop\C#\Snake\bin\Debug\net10.0\Snake.pdb
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.AssemblyInfoInputs.cache
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.AssemblyInfo.cs
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.csproj.CoreCompileInputs.cache
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.sourcelink.json
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.dll
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\refint\Snake.dll
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.pdb
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\Snake.genruntimeconfig.cache
+C:\Users\JK\Desktop\C#\Snake\obj\Debug\net10.0\ref\Snake.dll

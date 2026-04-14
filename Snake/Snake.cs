@@ -10,13 +10,13 @@ public class SnakePart(int row, int col)
     public (int row, int col) Position = (row, col);
 }
 
-public class Snake
+public class SnakeObject
 {
     private Direction Direction = Direction.Right;
-    private List<SnakePart> Body = [];
+    private readonly List<SnakePart> Body = [];
     public SnakePart Head => Body[0];
 
-    public Snake(int row, int col)
+    public SnakeObject(int row, int col)
     {   
         for (int i = 0; i < 4; i++)
         {
@@ -48,7 +48,8 @@ public class Snake
         }
     }
 
-    public bool Occupies(int row, int col) => Body.Any(p => p.Position == (row, col));
+    public bool BodyOccupies(int row, int col) => Body.Skip(1).Any(p => p.Position == (row, col));
+    public List<SnakePart> GetBody() => Body;
 }
 
 public enum Direction
