@@ -30,7 +30,7 @@ Context:
   * separating logic (Game, Snake, Food)
 * Still fine as TUI for now
 
-[-] C# Fundamentals Pass (NEW — do before going further)
+[+] C# Fundamentals Pass (NEW — do before going further)
 
 * Learn properly instead of just googling:
 
@@ -41,7 +41,7 @@ Context:
   * basic collections (List, Dictionary)
 * Do small throwaway examples, not a big project
 
-[ ] Sudoku
+[-] Sudoku
 
 * Focus on logic, not UI
 * Good for:
