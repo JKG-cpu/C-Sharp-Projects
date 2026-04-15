@@ -1,0 +1,15 @@
+C:\Users\JK\Desktop\C#\C# Fundamentals\bin\Debug\net10.0\C# Fundamentals.exe
+C:\Users\JK\Desktop\C#\C# Fundamentals\bin\Debug\net10.0\C# Fundamentals.deps.json
+C:\Users\JK\Desktop\C#\C# Fundamentals\bin\Debug\net10.0\C# Fundamentals.runtimeconfig.json
+C:\Users\JK\Desktop\C#\C# Fundamentals\bin\Debug\net10.0\C# Fundamentals.dll
+C:\Users\JK\Desktop\C#\C# Fundamentals\bin\Debug\net10.0\C# Fundamentals.pdb
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.AssemblyInfoInputs.cache
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.AssemblyInfo.cs
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.csproj.CoreCompileInputs.cache
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.sourcelink.json
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.dll
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\refint\C# Fundamentals.dll
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.pdb
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\C# Fundamentals.genruntimeconfig.cache
+C:\Users\JK\Desktop\C#\C# Fundamentals\obj\Debug\net10.0\ref\C# Fundamentals.dll

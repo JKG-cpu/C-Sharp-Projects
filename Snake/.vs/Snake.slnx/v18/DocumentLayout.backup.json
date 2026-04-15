@@ -48,13 +48,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Models.cs",
+              "RelativeDocumentMoniker": "Models.cs",
+              "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Models.cs",
+              "RelativeToolTip": "Models.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA/wCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T01:30:31.913Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Snake.cs",
               "DocumentMoniker": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Snake.cs",
               "RelativeDocumentMoniker": "Snake.cs",
               "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Snake.cs",
               "RelativeToolTip": "Snake.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowAkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T00:53:22.746Z"
             },
@@ -66,22 +78,9 @@
               "RelativeDocumentMoniker": "Board.cs",
               "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Board.cs",
               "RelativeToolTip": "Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T01:46:07.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Models.cs",
-              "DocumentMoniker": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Models.cs",
-              "RelativeDocumentMoniker": "Models.cs",
-              "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Snake\\Models.cs",
-              "RelativeToolTip": "Models.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T01:30:31.913Z"
+              "WhenOpened": "2026-04-13T01:46:07.714Z"
             }
           ]
         }
