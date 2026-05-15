@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{608CBA14-E863-74E7-C50B-AACBC75A85AF}|Sudoku.csproj|c:\\users\\jk\\desktop\\c#\\sudoku\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{608CBA14-E863-74E7-C50B-AACBC75A85AF}|Sudoku.csproj|solutionrelative:board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{608CBA14-E863-74E7-C50B-AACBC75A85AF}|Sudoku.csproj|c:\\users\\jk\\desktop\\c#\\sudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{608CBA14-E863-74E7-C50B-AACBC75A85AF}|Sudoku.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{608CBA14-E863-74E7-C50B-AACBC75A85AF}|Sudoku.csproj|c:\\users\\jk\\desktop\\c#\\sudoku\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{608CBA14-E863-74E7-C50B-AACBC75A85AF}|Sudoku.csproj|solutionrelative:models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCgAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T01:47:12.944Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\Board.cs",
+              "RelativeDocumentMoniker": "Board.cs",
+              "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\Board.cs",
+              "RelativeToolTip": "Board.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T02:14:17.053Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Models.cs",
+              "DocumentMoniker": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\Models.cs",
+              "RelativeDocumentMoniker": "Models.cs",
+              "ToolTip": "C:\\Users\\JK\\Desktop\\C#\\Sudoku\\Models.cs",
+              "RelativeToolTip": "Models.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T02:15:35.941Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
